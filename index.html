@@ -1,18 +1,33 @@
-<!DOCTYPE html>
+﻿<html lang="da"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skamling</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css" />
 
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/list.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Skamling</a>
+      </nav>
 
-<body>
+      <main id="main" role="main" class="container">
+          <form class="form-inline mt-2 mt-md-0 search-form">
+              <input class="form-control mr-sm-2" id="txtNumber" type="number" placeholder="Indtast nummer" aria-label="Search">
+              <button type="button" class="btn btn-primary my-sm-0" id="btnToggleNumber" >Vælg</button>
+          </form>
+          <select id="ddlFilter" class="form-control">
+            <option value="all">Alle</option>
+            <option value="finished">Gennemført</option>
+            <optioN value="notfinished">Ikke gennemført</option>
+          </select>
+          <div id="list">
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
-</body>
+          </div>
+      </main><!-- /.container -->
+  </body>
 </html>
